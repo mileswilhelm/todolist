@@ -1,0 +1,82 @@
+body {
+    background-color: #f3f5f6;
+}
+
+.item {
+    padding-top: 0.5em!important;
+    padding-bottom: 0.5em!important;
+}
+
+.floated.right {
+    float: right;
+}
+
+.aligned.center {
+    text-align: center;
+}
+
+.ui.header:first-child {
+    margin: calc(2rem - .14285714em) 0 1rem;
+}
+
+.list-item--input {
+    border: 0;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.4285em;
+    width: 50%;
+}
+
+.segment .trash.icon,
+.segment .edit.icon {
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.24s ease-out;
+}
+
+.segment:hover .trash.icon,
+.segment:hover .edit.icon {
+    opacity: 0.5;
+}
+
+.segment .trash.icon:hover,
+.segment .edit.icon:hover {
+    opacity: 1;
+}
+
+@keyframes shake {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
+  
+  .shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+  }
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;	
+  }
+  
